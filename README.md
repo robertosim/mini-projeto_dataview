@@ -105,17 +105,5 @@ disponível em `data/processed/v1_com_outliers/` para consulta futura.
 - Bibliotecas: pandas, numpy, matplotlib, seaborn, re, datetime, os, random, json
 - GitHub para versionamento
 
-## Como Executar
-1. Certifique-se de ter Python 3.8+ instalado
-2. Instale as dependências:
-   ```bash
-   pip install pandas numpy matplotlib seaborn
-   ```
-3. Abra o notebook:
-   ```bash
-   jupyter notebook notebooks/dataview.ipynb
-   ```
-4. Execute todas as células em ordem (Cell → Run All)
-
 ## Vídeo de demonstração
 [Inserir link do Google Drive ou YouTube aqui]
