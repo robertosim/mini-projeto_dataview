@@ -64,24 +64,33 @@ Praticar os principais conceitos:
 
 ## Estrutura do projeto
 ```
-projeto/
+mini-projeto_dataview/
+├── .gitignore
+├── README.md
 ├── data/
-│   ├── raw/                      # Dataset bruto gerado (vendas.csv)
+│   ├── raw/
+│   │   └── vendas.csv                  # Dataset bruto gerado (RF01)
 │   ├── processed/
-│   │   ├── v1_com_outliers/      # Limpeza geral, outliers mantidos
-│   │   └── v2_outliers_tratado/  # Limpeza v1 + tratamento de outliers (IQR)
-│   └── final/                    # Dataset final (data/final/vendas_final.csv)
+│   │   ├── v1_com_outliers/
+│   │   │   └── vendas_v1.csv           # Limpeza geral, outliers mantidos (RF03)
+│   │   └── v2_outliers_tratado/
+│   │       └── vendas_v2.csv           # v1 + tratamento de outliers IQR (RF04)
+│   └── final/
+│       └── vendas_final.csv            # Dataset final com colunas derivadas (RF12)
 ├── notebooks/
-│   └── dataview.ipynb            # Notebook principal de EDA
+│   └── dataview.ipynb                  # Notebook principal — classe DataViewPipeline (RF01-RF12)
 ├── outputs/
-│   ├── metricas_por_mes.csv
-│   ├── segmentacao_clientes.csv
-│   ├── estatisticas_gerais.json
+│   ├── metricas_por_mes.csv            # Métricas agregadas por mês (RF11)
+│   ├── segmentacao_clientes.csv        # Segmentação Bronze/Prata/Ouro (RF11)
+│   ├── estatisticas_gerais.json        # Estatísticas NumPy (RF11)
 │   └── graficos/
-│       ├── receita_por_mes.png
-│       ├── top_produtos.png
-│       └── dist_regiao.png
-└── README.md
+│       ├── receita_por_mes.png         # Gráfico de linha — tendência mensal (RF09)
+│       ├── top_produtos.png            # Gráfico de barras — top 5 produtos (RF09)
+│       ├── dist_regiao.png             # Boxplot — distribuição por região (RF09)
+│       ├── stripplot_antes.png         # Stripplot antes da remoção de outliers (RF04)
+│       ├── stripplot_depois.png        # Stripplot depois da remoção de outliers (RF04)
+│       ├── stripplot_com_outliers.png  # Stripplot v1 com outliers (RF04)
+│       └── stripplot_sem_outliers.png  # Stripplot v2 sem outliers (RF04)
 ```
 
 ## Decisão sobre v1 vs v2
