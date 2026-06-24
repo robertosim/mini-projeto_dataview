@@ -47,6 +47,12 @@ Praticar os principais conceitos:
 | RF11 | Ler e Escrever Arquivos (CSV com to_csv, JSON com dump/load) | OK |
 | RF12 | Consolidar a Análise e Salvar o Dataset Final (data/final/) | OK |
 
+## Como clonar o projeto
+```bash
+git clone https://github.com/robertosim/mini-projeto_dataview.git
+cd mini-projeto_dataview
+```
+
 ## Como executar
 
 ### No Google Colab (recomendado)
@@ -115,4 +121,4 @@ disponível em `data/processed/v1_com_outliers/` para consulta futura.
 - GitHub para versionamento
 
 ## Vídeo de demonstração
-[Inserir link do Google Drive ou YouTube aqui]
+[![Vídeo - DataView](https://img.shields.io/badge/YouTube-Demonstração-red)](https://www.youtube.com/watch?v=rhvbk3Rr7g8)
